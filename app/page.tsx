@@ -74,7 +74,12 @@ export default function Home() {
                                  variants={variants}
                     />
                 </motion.div>
-                    <Button className="">Preorder</Button>
+                {/* Tolong perbaiki (pas animasi bisa klik, pas udah buyar ga bisa, bug hanya muncul di desktop */}
+                <motion.h1 variants={variants} initial="hidden" animate="show"
+                    className="text-white text-sm font-poppins h-15"
+                >
+                    Tertarik? Preorder melalui <a href={preorderLink} className="font-bold underline">Google Form</a>.
+                </motion.h1>
             </div>
 
         </motion.div>
